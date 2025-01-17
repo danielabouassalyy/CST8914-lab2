@@ -3,20 +3,36 @@
 
 <head>
     <title>Question 4 - JavaScript</title>
-
 </head>
-
+  
 <body>
     <h1>HTML DOM Events</h1>
-    <p>Trigger a function on hover that will output "Hello World":</p>
+    <p>Press Enter or Space to output "Hello World":</p>
 
-    <button onmouseover="myFunction()">Action!</button>
+    <button id="actionBtn" onmouseover="myFunction()" aria-label="Click or press Enter or Space to display text">Action!</button>
     <p id="demo"></p>
 </body>
+
 <script>
     function myFunction() {
         document.getElementById("demo").innerHTML = "Hello World";
     }
+
+    /*Automatically focuses the button when the page loads so that the user doesnt have to use the tab key to navigate  */
+    window.onload = function() {
+        document.getElementById("actionBtn").focus();
+        
+    }
+
+    // storing
+    const button = document.getElementById("actionBtn");
+
+    /*when user clicks a key it will check if its enter or space and will trigger the same when the mouse in on hover or focuss*/
+    button.addEventListener("keydown", function(event) {
+        if (event.key === "Enter" || event.key === " ") {
+            myFunction();  
+        }
+    });
 </script>
 
 </html>
