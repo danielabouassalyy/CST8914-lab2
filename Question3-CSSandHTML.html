@@ -4,10 +4,12 @@
 <head>
   <title>Question 3- CSS & HTML</title>
   <style>
+
+    /* Button design  */
     .button {
-      background-color: #4CAF50;
+      background-color: #0066CC; /* Blue background for better contrast */
       border: none;
-      color: white;
+      color: white; /* White text */
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
@@ -17,13 +19,51 @@
       cursor: pointer;
     }
 
-    body {
-      padding: 20px;
-      background-color: #2f2f2f;
+    /* Button hover design */
+    .button:hover {
+      background-color: #0057a1; /* Slightly darker blue */
+      outline: 2px solid #f0f0f0; /* Light gray outline */
     }
 
+    /* Button focus design */
+    .button:focus {
+      background-color: #004080; /* Darker blue on focus */
+      outline: 2px solid #f0f0f0; /* Light gray outline */
+    }
+
+    /* Body design */
+    body {
+      padding: 20px;
+      background-color: #121212; /* Almost black */
+      color: #f0f0f0; /* Light text for contrast */
+    }
+
+    /* hs and ps design */
     h1, h2, p {
-      color: black;
+      color: white;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: #007BFF;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: #007BFF;
+      outline: 2px solid gray; /* Gray outline */
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff; 
+      text-align: center;
     }
   </style>
 </head>
@@ -32,9 +72,12 @@
   
   <h1>HTML made Easy</h1>
 
+  <h2>Understanding the Basics</h2>
+
   <p>What causes errors in HTML?</p>
 
-  <div class="button">Submit answers</div>
+  
+  <button class="button">Submit answers</button>
 
 </body>
 
