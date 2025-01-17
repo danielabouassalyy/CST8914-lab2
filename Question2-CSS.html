@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Question 2 - CSS</title>
+   <title>Shopping Categories</title>
    <style>
+    /* link color and underline*/
     .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
+      text-decoration: underline;
+      color: #007BFF;
+    }
+    /* link outline hover*/
+    .mainsection a:hover {
+      background-color: #f0f0f0;
+      color: #000;
+      outline: 2px solid #000;
     }
 
-    
-    </style>
+    /* link outline focus*/
+    .mainsection a:focus{
+      background-color: #00BFFF;
+      color: #000;
+      outline: 2px solid #000;
+    }
+
+    /* img size */
+    .mainsection img {
+      width: 300px;
+    }
+   </style>
 </head>
 <body>
 <div class="mainsection">
